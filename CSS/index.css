@@ -1,6 +1,27 @@
 h1{
-    color: brown;
-    background-color: burlywood;
+    color: palevioletred;
+    background-color: moccasin;
     font-size: 75px;
-    font-weight: bold;
+    font-weight: 900;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+    
     }
+
+.bg{
+    height: 500px;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/originals/4b/cd/23/4bcd2373c7defb17e09227ac69633119.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 12px;
+}
