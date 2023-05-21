@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <hr>
+        <form>
+            <div>
+                <label for="texto">Input de Texto</label>
+                <!-- placeholder -> Texto que fica no input como sugestão do que deve ser escrito
+                Type: texto -> texto -->
+                <input type="text" placeholder="Informe o texto..." id="texto" name="nome">
+            </div>
+
+            <!-- Senha deixa o que é digitado oculto -->
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <!-- Para informar que esse input é um email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <!-- Abre um input de selecionar uma data -->
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <!-- input de seleção de hora -->
+            <div>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <!-- Input que só aceita números -->
+            <div>
+                <label for="numero">Número:</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <!-- Input para selecionar um arquivo -->
+            <div>
+                <label for="arquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <!-- Informa que esse input é uma url -->
+            <div>
+                <label for="url">Url</label>
+                <input type="url" name="url" id="url">
+            </div>
+
+            <!-- Abre uma seleção de cor para escolher -->
+            <div>
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor">
+            </div>
+
+            <!-- Abre uma barra de arraste -->
+            <div>
+                <label for="barra">Barra de arraste</label>
+                <input type="range" name="barra" id="barra">
+            </div>
+
+            <!-- Abre uma bolinha para selecionar -->
+            <div>
+                <label for="selecionar">Selecionar</label>
+                <input type="radio" name="selecionar" id="selecionar">
+            </div>
+
+            <!-- Criando uma checkbox -->
+            <div>
+                <label for="caixa">Caixa</label>
+                <input type="checkbox" name="caixa" id="caixa">
+            </div>
+
+            <!-- Input para limpar o formulário -->
+            <div>
+                <input type="reset" name="resetar" id="resetar" value="Limpar">
+            </div>
+
+            <!-- Input para enviar as informações do formulário -->
+            <div>
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
+            </div>
+            
+            <!-- Area para escrever -->
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+            <!-- Abre uma lista para seleção -->
+            <select name="select" id="select">
+                <!-- Opção disabilitada que carrega selecionada e informa que o usuário precisa escolher uma das outras opções -->
+                <option value="opcao" disabled selected>Selecione uma das Opções</option>
+                
+                <!-- Opções que podem ser selecionadas -->
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+                <option value="trasnferencia">Tranferência</option>
+            </select>
+        </form>
+    </main>
+</body>
+</html>

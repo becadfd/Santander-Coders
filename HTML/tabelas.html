@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas no HTML</title>
+  </head>
+  <body>
+    <main>
+      <h1>Tabelas no HTML</h1>
+
+      <section id="students">
+        <h2>Tabela de Estudantes</h2>
+        <!-- Tag inicial para tabelas -->
+        <table border="3">
+          <!-- Cabeçalho da tabela -->
+          <thead>
+            <!-- Tag para criar uma linha na tabela -->
+            <tr>
+                <!-- Tag usada apenas na thead porque são os atributos da tabela -->
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Matrícula</th>
+            </tr>
+          </thead>
+          <!-- Corpo da tabela -->
+          <tbody>
+            <tr>
+                <!-- Items correspondentes aos atributos criados no thead -->
+              <td>Inez James</td>
+              <td>james_inez@email.com</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Betty Williams</td>
+              <td>betty.will@email.com</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Agustine Lopez</td>
+              <td>lopez.ag@email.com</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="finance">
+        <h2>Tabela de Controle Financeiro</h2>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">20/05/2023</td>
+                    <td>Despesa</td>
+                    <td>Almoço</td>
+                    <td>R$35,00</td>
+                </tr>
+                <tr>
+                    <td>Receita</td>
+                    <td>Salário</td>
+                    <td>R$3.768,00</td>
+                </tr>                
+            </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
