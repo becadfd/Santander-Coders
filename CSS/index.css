@@ -1,8 +1,13 @@
+body{
+    background-color: peachpuff;
+}
+
 h1{
     color: palevioletred;
     background-color: moccasin;
-    font-size: 75px;
-    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 400;
     font-style: oblique;
     text-decoration: underline;
     text-transform: capitalize;
@@ -21,7 +26,21 @@ h1{
 }
 
 p{
-    font-size: 20px;
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    font-weight: 200;
     text-align: justify;
     text-indent: 12px;
+}
+
+a{
+    color:palevioletred;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:hover{
+    color: white;
 }
