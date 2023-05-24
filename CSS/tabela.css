@@ -10,10 +10,24 @@ main{
 
 nav.menu{
     position: fixed;
-    background-color: white;
+    background-color: lightcoral;
     width: 100%;
-    height: 7rem;
+    height: 10rem;
     z-index: 1;
+    text-decoration: none;
+}
+
+.spinnerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.faSpinner{
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: lavender;
 }
 
 table, td, th{
@@ -23,6 +37,14 @@ table, td, th{
 table{
     font-size: 2.4rem;
     border-collapse: separate;
+}
+
+/* #tableComp{
+    display: none;
+} */
+
+[data-company='GJC']{
+    background-color: aquamarine;
 }
 
 table tr:first-child{
@@ -37,7 +59,7 @@ table tr:nth-child(2n+3) {
 .bgTabela{
     height: 400px;
     width: 100%;
-    background-image: url('https://i.pinimg.com/564x/e9/63/b8/e963b82b23a8c2253a154c75c41bdc54.jpg');
+    background-image: url('https://i.pinimg.com/564x/33/bb/98/33bb9807ae51531c3b6bbe88696ae705.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,10 +72,59 @@ h1{
     text-transform: capitalize;
     text-align: center;
     font-size: 3rem;
+    opacity: 1;
+}
+
+a{
+    background: lightcoral;
+    color: white;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    margin: auto;
+    cursor: pointer;
+    width: 80%;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out;
+    display: block;
+    text-decoration: none;
+}
+
+/* [data-anchor="products"]{
+    /* desabilita o botão
+    visibility: hidden; */
+/* 
+    display: flex;
+    transform: scale(.5) rotate(20deg); 
+}*/
+
+[data-anchor="products"]:hover{
+    transform: scale(1.2);
+    color: gainsboro;
+    background-color: plum;
+}
+
+[data-anchor="team"]:hover{
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+    animation-direction: alternate;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.35);
+        opacity: .6;
+    }
 }
 
 ul{
-    list-style: circle ;
+    text-decoration: none;
+    list-style:none;
 }
 
 ol{
@@ -61,7 +132,7 @@ ol{
 }
 
 .liContato h3{
-    top: 7.5rem;
+    top: 11rem;
     position: sticky;
     background-color: palevioletred;
 }
@@ -112,4 +183,31 @@ ol{
     height: 10rem;
     width: 20rem;
     object-fit: cover;
+}
+
+@media screen and (min-width: 1000px) {
+        .bgTabela{
+            height: 40vh;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .bgTabela{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    table{
+        display: none;
+    }    
+    h1{
+        color: lightcoral;
+    }
+}
+
+@media print{
+    .bgTabela{
+        display: none;
+    }
 }
