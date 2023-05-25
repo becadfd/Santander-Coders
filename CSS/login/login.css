@@ -1,0 +1,67 @@
+.conteudo{
+    height: 100vh;
+    display: grid;
+}
+
+.conteudo h1{
+    font-size: 5.6rem;
+}
+
+.conteudo h1 p + p{
+    color: green;
+}
+
+main {
+    grid-area: title;
+}
+
+aside {
+    grid-area: login;
+    border: 2px solid teal;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: green;
+    color: wheat;
+    height: 2rem;
+}
+
+.inputGroup {
+    padding: 30px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: green;
+}
+
+li {
+    text-decoration: none;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1024px){
+    .conteudo{
+        display: grid;
+        gap: 5rem;
+        grid-template-areas:
+        ". . . . ."
+        ". title login login ." 
+        ". title login login ."
+        ". title login login ."
+        ". . . . ."
+        "footer footer footer footer footer"
+        ;
+    }
+   
+
+}
+

@@ -1,0 +1,36 @@
+.grid{
+    height: calc(100vh);
+    position: relative;
+    display: grid;
+    justify-content: flex-start;
+    /* gap: 2rem 5rem; */
+    row-gap: 2rem;
+    column-gap: 5rem;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: 3fr repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.boxGrid{
+    min-height: 4rem;
+    min-width: 8rem;
+    border: 10px solid violet;
+    color: wheat;
+    background-color: blueviolet;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    flex-basis: 20%;
+    flex: 1;
+    border-radius: 20px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+ }
+
+.boxGrid, p, button{
+    font-size: 1.5rem;
+}
+
